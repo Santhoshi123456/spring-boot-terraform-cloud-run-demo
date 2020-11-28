@@ -22,7 +22,7 @@ terraform apply
 gcloud run services list --platform managed
 ```
 
-To get access the URL of the deployed service, run the following command:
+In order to get access the URL of the deployed service, run the following command:
 
 ```bash
 gcloud run services list --platform managed
@@ -30,11 +30,6 @@ gcloud run services list --platform managed
 
 You’ve now come to the point where you can finally see "Hello Cloud Run!" if you open the URL of the aforementioned deployed service on Google Cloud Run.
 
-To get access the URL of the deployed service, run the following command:
-
-```bash
-gcloud run services list --platform managed
-```
 
 Destroy the infrastructure that we created in the previous step by running the following command:
 ```
