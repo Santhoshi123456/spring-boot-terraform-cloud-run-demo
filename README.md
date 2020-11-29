@@ -2,14 +2,15 @@
 
 This example shows how to run a hello world service on Google Run using Terraform
 
-**Prerequisites:** [Java 8](https://adoptopenjdk.net/)
+**Prerequisites:** [Java 11](https://adoptopenjdk.net/)
 
  [Terraform](https://www.terraform.io/)
 
 
 ## Getting Started
 
-Terraform is used to create the Google Cloud Run infrastructure needed to deploy our hello world spring boot service:
+Terraform is used to create the Google Cloud Run infrastructure needed to deploy our hello world spring boot service. The following commands create the cloud infrastructure
+and will eventually show the URL of the deployed service,
 
 ```bash
 git clone https://github.com/mozammal/spring-boot-terraform-cloud-run-demo.git
@@ -19,13 +20,7 @@ cd terraform
 terraform init
 terraform plan
 terraform apply
-gcloud run services list --platform managed
-```
-
-In order to get access the URL of the deployed service, run the following command:
-
-```bash
-gcloud run services list --platform managed
+terraform output url
 ```
 
 You’ve now come to the point where you can finally see "Hello Cloud Run!" if you open the URL of the aforementioned deployed service on Google Cloud Run.

@@ -15,7 +15,8 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <java.version>8</java.version>
+        <java.version>11</java.version>
+        <docker.image.uri>gcr.io/ultimate-hydra-288114/spring-boot-terraform-cloud-run</docker.image.uri>
     </properties>
 
     <dependencies>
@@ -49,7 +50,7 @@
                 <version>2.6.0</version>
                 <configuration>
                     <to>
-                        <image>gcr.io/ultimate-hydra-288114/spring-boot-terraform-cloud-run</image>
+                        <image>${docker.image.uri}</image>
                     </to>
                 </configuration>
             </plugin>
@@ -59,5 +60,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
