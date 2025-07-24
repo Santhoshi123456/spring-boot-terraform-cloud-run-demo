@@ -9,7 +9,7 @@ resource google_cloud_run_service "spring_boot_terraform_cloud_run_service" {
   template {
     spec {
       containers {
-        image = "gcr.io/ultimate-hydra-288114/spring-boot-terraform-cloud-run"
+        image = "gcr.io/user-cxhlcivpknyz/spring-boot-terraform-cloud-run"
       }
     }
   }
